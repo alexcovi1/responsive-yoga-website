@@ -1,0 +1,309 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1025;
+     color: #A094B8;
+    max-width: 376px;
+    margin: 0 auto;
+    min-height: 5000px;
+
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    background: linear-gradient(to right, #FF51AF, #9F53FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-icons button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Common styles */
+section {
+    padding: 30px 20px;
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 15px;
+    font-family: 'Lora', serif;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #a9a9a9;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.cta-button, .follow-button, .subscribe-button {
+    background: linear-gradient(to right, #ff69b4, #9370db);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+   
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover, .next-button:hover, .follow-button:hover, .subscribe-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+}
+
+.highlight {
+    background: linear-gradient(to right, #ff69b4, #9370db);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 0 10px;
+    transform: rotate(15deg);
+    width: 80%;
+}
+
+/* Stats section */
+.stats {
+    text-align: center;
+}
+
+.stats-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.stats-item h2 {
+    font-size: 28px;
+    color: #ff69b4;
+}
+
+.stats-image img {
+    width:100%;
+    height:100%;
+}
+
+/* Feature section */
+.feature {
+    position: relative;
+    padding: 20px;
+    background-color: #1a1025;
+    width: 100%;
+    max-width: 376px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feature-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 40px;
+}
+.feature-image img {
+    max-width: 100%; 
+    height: auto; 
+}
+.feature-number {
+    font-size: 24px;
+    color: #ff69b4;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.next-button{
+    background-color: #1a1025;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    border: none;
+
+}
+
+
+
+/* Health section */
+
+.health{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.health h2{
+    text-align: center;
+}
+
+.health p{
+    text-align: center;
+}
+.health-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.heart-rate {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.heart-rate .icon {
+    margin-right: 10px;
+}
+
+.courses {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* Workout section */
+.workout {
+    text-align: center;
+}
+
+/* Gallery section */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Newsletter section */
+.newsletter {
+    background: linear-gradient(to bottom right, #ff69b4, #9370db);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter-form input {
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Contact section */
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info h3 {
+    color: #ff69b4;
+    margin: 20px 0 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #130d1e;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    color: #ff69b4;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #a9a9a9;
+}
+
+/* Features */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.feature-tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Instagram section */
+.instagram {
+    text-align: center;
+}
+
+.hashtag {
+    color: #ff69b4;
+    font-size: 24px;
+    margin: 15px 0;
+}
