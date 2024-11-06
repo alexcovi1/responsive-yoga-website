@@ -88,6 +88,13 @@ p {
     transform: translateY(-2px);
 }
 
+.follow-button{
+    width: 80px;
+    border-radius: 50%;
+    justify-content: center;
+   
+}
+
 /* Hero section */
 .hero {
     text-align: center;
@@ -101,6 +108,7 @@ p {
     transform: rotate(15deg);
     display: inline-block;
     font-size: inherit;
+    
     }
 
 .yoga-highlight{
