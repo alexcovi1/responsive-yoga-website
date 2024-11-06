@@ -32,6 +32,12 @@ header {
     font-weight: bold;
 }
 
+#moon{
+    display: none;
+}
+
+
+
 .header-icons button {
     background: none;
     border: none;
@@ -39,6 +45,7 @@ header {
     font-size: 20px;
     margin-left: 15px;
     cursor: pointer;
+    
 }
 
 /* Common styles */
@@ -92,7 +99,19 @@ p {
     color: transparent;
     padding: 0 10px;
     transform: rotate(15deg);
-    width: 80%;
+    display: inline-block;
+    font-size: inherit;
+    }
+
+.yoga-highlight{
+    background: linear-gradient(45deg, #ff69b4, #9370db);
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    font-size: inherit;
+    transform: rotate(10deg);
 }
 
 /* Stats section */
