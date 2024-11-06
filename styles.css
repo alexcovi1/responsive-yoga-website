@@ -207,8 +207,8 @@ p {
     max-width: 376px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #1a1025;
-    position: relative;
+   
+    
 }
 
 .showcase-container {
@@ -224,18 +224,21 @@ p {
     position: absolute;
     width: 280px;
     height: 160px;
-    border-radius: 40px;
-    overflow: hidden;
+    border-radius: 50px;
+    
 }
 
 .frame-top {
     top: 20px;
     z-index: 2;
+    right: 10%;
+    position: absolute;
 }
 
 .frame-bottom {
     bottom: 20px;
     transform: translateX(20px);
+    left: 10%;
 }
 
 .showcase-image {
@@ -248,23 +251,27 @@ p {
     position: absolute;
     display: flex;
     align-items: center;
-    gap: 8px;
     padding: 8px 16px;
-    background: rgba(26, 16, 37, 0.8);
-    backdrop-filter: blur(4px);
+ 
     border-radius: 20px;
+    
 }
 
 .video-label {
     top: 20px;
-    right: 20px;
+    left: 50%;
     color: #ff69b4;
+ 
 }
 
 .trainer-label {
     bottom: 20px;
-    left: 20px;
+    right: 60%;
     color: #ff69b4;
+    z-index: 5;
+    position: absolute;
+    
+   
 }
 
 .label-icon {
@@ -304,26 +311,80 @@ p {
 }
 
 /* Gallery section */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 20px;
+.yoga-gallery {
+    width: 100%;
+    max-width: 376px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1025;
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .gallery-item {
-    height: 150px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
+    position: relative;
     overflow: hidden;
+    border-radius: 192px;
 }
 
-.gallery-item img {
+.gallery-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* First image */
+.item-first {
+    width: 140px;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+/* Second image */
+.item-second {
+    width: 210px;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+/* Third image */
+.item-third {
+    width: 230px;
+    height: 117px;
+    transform: rotate(-15deg);
+}
+
+/* Fourth image */
+.item-fourth {
+    width: 230px;
+    height: 117px;
+    transform: rotate(15deg);
+}
+
+/* Ensure images maintain quality during rotation */
+.gallery-image {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 376px) {
+    .gallery-container {
+        gap: 15px;
+    }
+    
+    .gallery-item {
+        transform-origin: center;
+    }
+}
 /* Newsletter section */
 .newsletter {
     background: linear-gradient(to bottom right, #ff69b4, #9370db);
