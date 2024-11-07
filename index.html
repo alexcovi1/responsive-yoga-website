@@ -1,167 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <div class="logo">Yoga</div>
-        <div class="header-icons">
-            <button class="theme-toggle"><img id="sun" src="./images/ri_sun-line.png" alt=""> <img id="moon"
-                    src="./images/yoga moon.png" alt=""></button>
-            <button class="menu-toggle"><img src="images/ri_apps-2-line.png"></button>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h1>Choose Your<br>Best <span class="highlight yoga-highlight">Yoga</span> Teacher</h1>
-
-            <p>Calm your mind and body with the best yoga teachers available, relax your day and stay positive.</p>
-            <button class="cta-button">Get Started Free →</button>
-        </section>
-
-        <section class="stats">
-            <div class="stats-content">
-                <div class="stats-item">
-                    <h2>300+</h2>
-                    <p>Yoga Class</p>
-                </div>
-                <div class="stats-item">
-                    <h2>40+</h2>
-                    <p>Participants</p>
-                </div>
+    <input type="checkbox" id="theme-toggle" class="theme-toggle">
+    <div class="page-wrapper">
+        <header>
+            <div class="logo">Yoga</div>
+            <div class="header-icons">
+                <label for="theme-toggle" class="theme-toggle-label">
+                    <img id="sun" src="./images/ri_sun-line.png" alt="Light mode">
+                    <img id="moon" src="./images/yoga moon.png" alt="Dark mode">
+                </label>
+                <button class="menu-toggle"><img src="images/ri_apps-2-line.png" alt="Menu"></button>
             </div>
-            <div class="stats-image">
-                <img src="images/home-yoga.png" alt="Yoga meditation pose">
-            </div>
-        </section>
+        </header>
 
-        <section class="feature">
-            <div class="feature-container">
-                <div class="feature-number">#01</div>
-                <div class="feature-image"><img src="images/List box.png"></div>
-            </div>
-            <p>Get a list of specific influencers in your niche at your fingertips so you can focus on managing your
-                status.</p>
-            <button class="next-button"><img src="images/Button link list.png"></button>
-        </section>
+        <main>
+            <section class="hero">
+                <h1>Choose Your<br>Best <span class="highlight yoga-highlight">Yoga</span> Teacher</h1>
+                <p>Calm your mind and body with the best yoga teachers available, relax your day and stay positive.</p>
+                <button class="cta-button">Get Started Free →</button>
+            </section>
 
-        <section class="health">
-            <h2>Bring Happiness To Good Health!</h2>
-            <p>If you take care of your good health, take care of your mentality and lead a healthy life with positive
-                thoughts every day.</p>
-            <button class="cta-button">Let's Start →</button>
-            <div class="health-stats">
-                <div class='man-image'><img src="images/Image group.png"></div>
-            </div>
-        </section>
-
-        <section class="workout">
-            <h2>Anytime, Any Place, Any Workout</h2>
-            <p>Take your routine at any time of your day, with the new videos and with the teachers who will guide you.
-            </p>
-            <button class="cta-button">Get Started Free →</button>
-
-
-            <section class="features-showcase">
-                <div class="showcase-container">
-                    <div class="showcase-frame frame-top">
-                        <img src="images/routine-yoga-1.png" alt="Yoga pose demonstration" class="showcase-image">
-                        <div class="feature-label video-label">
-                            <span class="label-icon"><img src="images/Box routine 1.png"></span>
-
-                        </div>
+            <section class="stats">
+                <div class="stats-content">
+                    <div class="stats-item">
+                        <h2>300+</h2>
+                        <p>Yoga Class</p>
                     </div>
+                    <div class="stats-item">
+                        <h2>40+</h2>
+                        <p>Participants</p>
+                    </div>
+                </div>
+                <div class="stats-image">
+                    <img src="images/home-yoga.png" alt="Yoga meditation pose">
+                </div>
+            </section>
 
-                    <div class="showcase-frame frame-bottom">
-                        <img src="images/routine-yoga-2.png" alt="Professional yoga instruction" class="showcase-image">
-                        <div class="feature-label trainer-label">
-                            <span class="label-icon"><img src="images/Box routine 2.png"></span>
+            <section class="feature">
+                <div class="feature-container">
+                    <div class="feature-number">#01</div>
+                    <div class="feature-image"><img src="images/List box.png" alt="Feature list"></div>
+                </div>
+                <p>Get a list of specific influencers in your niche at your fingertips so you can focus on managing your status.</p>
+                <button class="next-button"><img src="images/Button link list.png" alt="Next"></button>
+            </section>
+
+            <section class="health">
+                <h2>Bring Happiness To Good Health!</h2>
+                <p>If you take care of your good health, take care of your mentality and lead a healthy life with positive thoughts every day.</p>
+                <button class="cta-button">Let's Start →</button>
+                <div class="health-stats">
+                    <div class="man-image"><img src="images/Image group.png" alt="Health statistics"></div>
+                </div>
+            </section>
+
+            <section class="workout">
+                <h2>Anytime, Any Place, Any Workout</h2>
+                <p>Take your routine at any time of your day, with the new videos and with the teachers who will guide you.</p>
+                <button class="cta-button">Get Started Free →</button>
+
+                <div class="features-showcase">
+                    <div class="showcase-container">
+                        <div class="showcase-frame frame-top">
+                            <img src="images/routine-yoga-1.png" alt="Yoga pose demonstration" class="showcase-image">
+                            <div class="feature-label video-label">
+                                <span class="label-icon"><img src="images/Box routine 1.png" alt="Video icon"></span>
+                            </div>
+                        </div>
+                        <div class="showcase-frame frame-bottom">
+                            <img src="images/routine-yoga-2.png" alt="Professional yoga instruction" class="showcase-image">
+                            <div class="feature-label trainer-label">
+                                <span class="label-icon"><img src="images/Box routine 2.png" alt="Trainer icon"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </section>
 
+            <section class="instagram">
+                <h2>Follow Us On Instagram</h2>
+                <div class="hashtag">#YOGA</div>
+                <button class="follow-button">Follow →</button>
+            </section>
 
-        <section class="instagram">
-            <h2>Follow Us On Instagram</h2>
-            <div class="hashtag">#YOGA</div>
-            <button class="follow-button">Follow →</button>
-        </section>
-
-        <section class="yoga-gallery">
-            <div class="gallery-container">
-                <div class="gallery-row">
-                    <div class="gallery-item item-first">
-                        <img src="images/follow-yoga-1.png" alt="Yoga pose on beach" class="gallery-image">
+            <section class="yoga-gallery">
+                <div class="gallery-container">
+                    <div class="gallery-row">
+                        <div class="gallery-item item-first">
+                            <img src="images/follow-yoga-1.png" alt="Yoga pose on beach" class="gallery-image">
+                        </div>
+                        <div class="gallery-item item-second">
+                            <img src="images/follow-yoga-2.png" alt="Yoga pose on rocks" class="gallery-image">
+                        </div>
                     </div>
-                    <div class="gallery-item item-second">
-                        <img src="images/follow-yoga-2.png" alt="Yoga pose on rocks" class="gallery-image">
+                    <div class="gallery-item item-third">
+                        <img src="images/follow-yoga-3.png" alt="Yoga pose in nature" class="gallery-image">
+                    </div>
+                    <div class="gallery-item item-fourth">
+                        <img src="images/follow-yoga-4.png" alt="Yoga pose by ocean" class="gallery-image">
                     </div>
                 </div>
+            </section>
 
-                <div class="gallery-item item-third">
-                    <img src="images/follow-yoga-3.png" alt="Yoga pose in nature" class="gallery-image">
+            <section class="newsletter">
+                <h2>Join our newsletter</h2>
+                <p>Subscribe to our newsletter to be aware of many things on discounts, gifts, training and much more. Just enter your email.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="For latest update send mail">
+                    <button class="subscribe-button">Subscribe →</button>
                 </div>
+            </section>
+        </main>
 
-                <div class="gallery-item item-fourth">
-                    <img src="images/follow-yoga-4.png" alt="Yoga pose by ocean" class="gallery-image">
+        <footer>
+            <section class="contact">
+                <h2>Yoga</h2>
+                <p>Take care of your health and your mind with the best Yoga classes.</p>
+                <div class="contact-info">
+                    <h3>Address</h3>
+                    <p>12345 M/01 Sol Avenue, Lima, Peru</p>
+                    <h3>Contact</h3>
+                    <p>+123 456 7890</p>
+                    <p>yoga@email.com</p>
+                    <h3>Office</h3>
+                    <p>Monday - Saturday</p>
+                    <p>9AM - 10PM</p>
                 </div>
+            </section>
+            <div class="social-links">
+                <a href="#" class="social-icon"><img src="images/ri_facebook-circle-line.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="images/ri_instagram-line.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="images/ri_twitter-line.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="images/ri_youtube-line.png" alt="YouTube"></a>
             </div>
-        </section>
-
-
-        <section class="newsletter">
-            <h2 class="h1-joinournewsletter">Join our newsletter</h2>
-            <p style="color: white;">Subscribe to our newsletter to be aware of many things on discounts, gifts,
-                training and much more. Just
-                enter your email.</p>
-            <div class="newsletter-form">
-                <input type="email" placeholder="For latest update send mail">
-                <button class="subscribe-button">Subscribe →</button>
-            </div>
-        </section>
-
-
-
-    <footer>
-        
-        <section class="contact">
-            <h2>Yoga</h2>
-            <p>Take care of your health and your mind with the best Yoga classes.</p>
-
-            <div class="contact-info">
-                <h3>Address</h3>
-                <p>12345 M/01 Sol Avenue, Lima, Peru</p>
-
-                <h3>Contact</h3>
-                <p>+123 456 7890</p>
-                <p>yoga@email.com</p>
-
-                <h3>Office</h3>
-                <p>Monday - Saturday</p>
-                <p>9AM - 10PM</p>
-            </div>
-        </section>
-    </main>
-
-
-    
-        <div class="social-links">
-            <a href="#" class="social-icon"><img src="images/ri_facebook-circle-line.png"></a>
-            <a href="#" class="social-icon"><img src="images/ri_instagram-line.png"></a>
-            <a href="#" class="social-icon"><img src="images/ri_twitter-line.png"></a>
-            <a href="#" class="social-icon"><img src="images/ri_youtube-line.png"></a>
-        </div>
-        <p class="copyright">© Copyright Bedimcode. All rights reserved</p>
-    </footer>
+            <p class="copyright">© Copyright Bedimcode. All rights reserved</p>
+        </footer>
+    </div>
 </body>
-
 </html>
