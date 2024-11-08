@@ -6,160 +6,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lora:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="logo">Yoga</div>
-    
-        <!-- Centered menu links -->
-        <nav class="menu-items">
-            <a href="#home">Home</a>
-            <a href="#health">Health</a>
-            <a href="#routine">Routine</a>
-            <a href="#follow">Follow</a>
-        </nav>
-        
-        <!-- Right aligned icon for theme toggle -->
-        <div class="header-icons">
-            <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
-            <label for="theme-toggle-checkbox" class="theme-toggle">
-                <img id="sun" src="./images/ri_sun-line.png" alt="Sun icon">
-                <img id="moon" src="./images/yoga moon.png" alt="Moon icon">
-            </label>
-            
-            <button class="menu-toggle"><img src="images/ri_apps-2-line.png" alt="Menu icon"></button>
-        </div>
-    </header>
-    
-    
+    <input type="checkbox" id="theme-toggle" class="theme-toggle">
+    <div class="page-wrapper">
+        <header>
+            <div class="logo">Yoga</div>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Choose Your<br>Best <span class="highlight yoga-highlight">Yoga</span> Teacher</h1>
-                <p class="hero-subtitle">Calm your mind and body with the best yoga teachers available, relax your day and stay positive.</p>
-                <button class="cta-button">Get Started Free →</button>
-                <div class="stats">
-                    <div class="stats-item">
-                        <h2>300+</h2>
-                        <p>Yoga Class</p>
-                    </div>
-                    <div class="stats-item">
-                        <h2>40+</h2>
-                        <p>Participants</p>
-                    </div>
+            <!-- Centered menu links -->
+            <div class="desktop-menu">
+                <nav class="menu-items">
+                    <a href="#home">Home</a>
+                    <a href="#health">Health</a>
+                    <a href="#routine">Routine</a>
+                    <a href="#follow">Follow</a>
+                </nav>
+                <div class="header-icons">
+                    <label for="theme-toggle" class="theme-toggle-label">
+                        <img id="sun" src="./images/ri_sun-line.png" alt="Light mode">
+                        <img id="moon" src="./images/yoga moon.png" alt="Dark mode">
+                    </label>
+                    <button class="menu-toggle"><img src="images/ri_apps-2-line.png" alt="Menu"></button>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="images/home-yoga.png" alt="Yoga meditation pose">
-                <div class="decorative-element decorative-icon"></div>
-                <div class="decorative-element decorative-flower"></div>
-            </div>
-        </section>
-        
-        
+        </header>
 
-        <section class="feature">
-            <div class="feature-container">
-                <div class="feature-number">#01</div>
-                
-                <!-- Feature Image -->
-                <div class="feature-image">
-                    <img src="images/List box.png" alt="Feature Image">
-                </div>
-                
-                <!-- Text and Button Section -->
-                <div class="feature-text-container">
-                    <p class="feature-text">Get a list of specific influencers in your niche at your fingertips so you can focus on managing your status.</p>
-                    <button class="next-button">
-                        <img src="images/Button link list.png" alt="Next Button">
-                    </button>
-                </div>
-            </div>
-        </section>
-        
-
-        <section class="health">
-            <div class="health-content">
-                <h2>Bring Happiness To Good Health!</h2>
-                <p>If you take care of your good health, take care of your mentality and lead a healthy life with positive thoughts every day.</p>
-                <button class="cta-button-lest">Let's Start →</button>
-            </div>
-            
-            <div class="health-stats">
-                <img src="images/Image group.png" alt="Healthy man with badges" class="man-image">
-            </div>
-        </section>
-        
-        
-
-        <section class="workout">
-            <div class="workout-content">
-                <h2>Anytime, Any Place, Any Workout</h2>
-                <p>Take your routine at any time of your day, with the new videos and with the teachers who will guide you.</p>
-                <button class="cta-button">Get Started Free →</button>
-            </div>
-            <section class="features-showcase">
-                <div class="showcase-container">
-                    <div class="showcase-frame frame-top">
-                        <img src="images/routine-yoga-1.png" alt="Yoga pose demonstration" class="showcase-image">
-                        <div class="feature-label video-label">
-                            <span class="label-icon"><img src="images/Box routine 1.png"></span>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Choose Your<br>Best <span class="highlight yoga-highlight">Yoga</span> Teacher</h1>
+                    <p class="hero-subtitle">Calm your mind and body with the best yoga teachers available, relax your
+                        day and stay positive.</p>
+                    <button class="cta-button">Get Started Free →</button>
+                    <div class="stats">
+                        <div class="stats-item">
+                            <h2>300+</h2>
+                            <p>Yoga Class</p>
+                        </div>
+                        <div class="stats-item">
+                            <h2>40+</h2>
+                            <p>Participants</p>
                         </div>
                     </div>
-                    <div class="showcase-frame frame-bottom">
-                        <img src="images/routine-yoga-2.png" alt="Professional yoga instruction" class="showcase-image">
-                        <div class="feature-label trainer-label">
-                            <span class="label-icon"><img src="images/Box routine 2.png"></span>
+                </div>
+                <div class="hero-image">
+                    <img src="images/home-yoga.png" alt="Yoga meditation pose">
+                    <div class="decorative-element decorative-icon"></div>
+                    <div class="decorative-element decorative-flower"></div>
+                </div>
+            </section>
+
+
+            <section class="feature">
+                <div class="feature-container">
+                    <div class="number-image-container">
+                        <div class="feature-number">#01</div>
+
+                        <!-- Feature Image -->
+                        <div class="feature-image">
+                            <img src="images/List box.png" alt="Feature Image">
                         </div>
+                    </div>
+                    <!-- Text and Button Section -->
+                    <div class="feature-text-container">
+                        <p class="feature-text">Get a list of specific influencers in your niche at your fingertips so
+                            you can focus on managing your status.</p>
+                        <button class="next-button">
+                            <img src="images/Button link list.png" alt="Next Button">
+                        </button>
                     </div>
                 </div>
             </section>
-        </section>
-        
 
+            <section class="health">
+                <div class="health-content">
+                    <h2>Bring Happiness To Good Health!</h2>
+                    <p>If you take care of your good health, take care of your mentality and lead a healthy life with
+                        positive thoughts every day.</p>
+                    <button class="cta-button-lest">Let's Start →</button>
+                </div>
 
-        <section class="instagram">
-            <h2>Follow Us On Instagram</h2>
-            <div class="hashtag">#YOGA</div>
-            <button class="follow-button">Follow →</button>
-        </section>
+                <div class="health-stats">
+                    <img src="images/Image group.png" alt="Healthy man with badges" class="man-image">
+                </div>
+            </section>
 
-        <section class="yoga-gallery">
-            <div class="gallery-container">
-                <div class="gallery-row">
-                    <div class="gallery-item item-first">
-                        <img src="images/follow-yoga-1.png" alt="Yoga pose on beach" class="gallery-image">
+            <section class="workout">
+                <div class="workout-content">
+                    <h2>Anytime, Any Place, Any Workout</h2>
+                    <p>Take your routine at any time of your day, with the new videos and with the teachers who will
+                        guide you.</p>
+                    <button class="cta-button">Get Started Free →</button>
+                </div>
+                <section class="features-showcase">
+                    <div class="showcase-container">
+                        <div class="showcase-frame frame-top">
+                            <img src="images/routine-yoga-1.png" alt="Yoga pose demonstration" class="showcase-image">
+                            <div class="feature-label video-label">
+                                <span class="label-icon"><img src="images/Box routine 1.png"></span>
+                            </div>
+                        </div>
+                        <div class="showcase-frame frame-bottom">
+                            <img src="images/routine-yoga-2.png" alt="Professional yoga instruction"
+                                class="showcase-image">
+                            <div class="feature-label trainer-label">
+                                <span class="label-icon"><img src="images/Box routine 2.png"></span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="gallery-item item-second">
-                        <img src="images/follow-yoga-2.png" alt="Yoga pose on rocks" class="gallery-image">
+                </section>
+            </section>
+
+
+            <section class="instagram">
+                <h2>Follow Us On Instagram</h2>
+                <div class="hashtag">#YOGA</div>
+                <button class="follow-button">Follow →</button>
+            </section>
+
+            <section class="yoga-gallery">
+                <div class="gallery-container">
+                    <div class="gallery-row">
+                        <div class="gallery-item item-first">
+                            <img src="images/follow-yoga-1.png" alt="Yoga pose on beach" class="gallery-image">
+                        </div>
+                        <div class="gallery-item item-second">
+                            <img src="images/follow-yoga-2.png" alt="Yoga pose on rocks" class="gallery-image">
+                        </div>
+                    </div>
+                    <div class="gallery-item item-third">
+                        <img src="images/follow-yoga-3.png" alt="Yoga pose in nature" class="gallery-image">
+                    </div>
+                    <div class="gallery-item item-fourth">
+                        <img src="images/follow-yoga-4.png" alt="Yoga pose by ocean" class="gallery-image">
                     </div>
                 </div>
+            </section>
 
-                <div class="gallery-item item-third">
-                    <img src="images/follow-yoga-3.png" alt="Yoga pose in nature" class="gallery-image">
+            <section class="newsletter">
+                <h2>Join our newsletter</h2>
+                <p>Subscribe to our newsletter to be aware of many things on discounts, gifts, training and much more.
+                    Just enter your email.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="For latest update send mail">
+                    <button class="subscribe-button">Subscribe →</button>
                 </div>
-
-                <div class="gallery-item item-fourth">
-                    <img src="images/follow-yoga-4.png" alt="Yoga pose by ocean" class="gallery-image">
-                </div>
-            </div>
-        </section>
-
-
-        <section class="newsletter">
-            <h2 class="h1-joinournewsletter">Join our newsletter</h2>
-            <p style="color: white;">Subscribe to our newsletter to be aware of many things on discounts, gifts,
-                training and much more. Just
-                enter your email.</p>
-            <div class="newsletter-form">
-                <input type="email" placeholder="For latest update send mail">
-                <button class="subscribe-button">Subscribe →</button>
-            </div>
-        </section>
-
-
+            </section>
+        </main>
 
         <footer>
             <div class="footer-section">
@@ -182,16 +179,16 @@
                     <p>9AM - 10PM</p>
                 </div>
             </div>
-        
+
             <div class="social-links">
-                <a href="#" class="social-icon"><img src="images/ri_facebook-circle-line.png"></a>
-                <a href="#" class="social-icon"><img src="images/ri_instagram-line.png"></a>
-                <a href="#" class="social-icon"><img src="images/ri_twitter-line.png"></a>
-                <a href="#" class="social-icon"><img src="images/ri_youtube-line.png"></a>
+                <a href="#" class="social-icon"><img src="images/ri_facebook-circle-line.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="images/ri_instagram-line.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="images/ri_twitter-line.png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="images/ri_youtube-line.png" alt="YouTube"></a>
             </div>
-            
             <p class="copyright">© Copyright Bedimcode. All rights reserved</p>
         </footer>
-        
+    </div>
+</body>
 
 </html>
